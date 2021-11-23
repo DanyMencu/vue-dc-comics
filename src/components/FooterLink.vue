@@ -6,93 +6,31 @@
                 <div>
                     <h3>Dc Comics</h3>
                     <ul>
-                        <li>
-                            <a href="/">Characters</a>
+                        <li v-for="(element, index) in Comics" :key="`comicIndex-${index}`">
+                            <a :href="element.url">{{ element.text }}</a>
                         </li>
-                        <li>
-                            <a href="/">Comics</a>
-                        </li>
-                        <li>
-                            <a href="/">Movies</a>
-                        </li>
-                        <li>
-                            <a href="/">TV</a>
-                        </li>
-                        <li>
-                            <a href="/">Games</a>
-                        </li>
-                        <li>
-                            <a href="/">Videos</a>
-                        </li>
-                        <li>
-                            <a href="/">News</a>
-                        </li>
+
                     </ul>
                     <h3>Shop</h3>
                     <ul>
-                        <li>
-                            <a href="/">Shop DC</a>
-                        </li>
-                        <li>
-                            <a href="/">Shop DC Collectibles</a>
+                        <li v-for="(element, index) in Shop" :key="`shopIndex-${index}`">
+                            <a :href="element.url">{{ element.text }}</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h3>Dc</h3>
                     <ul>
-                        <li>
-                            <a href="/">Therms Of Use</a>
-                        </li>
-                        <li>
-                            <a href="/">Privacy policy (New)</a>
-                        </li>
-                        <li>
-                            <a href="/">Ad Choices</a>
-                        </li>
-                        <li>
-                            <a href="/">Advertising</a>
-                        </li>
-                        <li>
-                            <a href="/">Jobs</a>
-                        </li>
-                        <li>
-                            <a href="/">Subscriptions</a>
-                        </li>
-                        <li>
-                            <a href="/">Talent Workshops</a>
-                        </li>
-                        <li>
-                            <a href="/">CPSC Certificates</a>
-                        </li>
-                        <li>
-                            <a href="/">Rating</a>
-                        </li>
-                        <li>
-                            <a href="/">Shop Help</a>
-                        </li>
-                        <li>
-                            <a href="/">Contact Us</a>
+                        <li v-for="(element, index) in Dc" :key="`DcIndex-${index}`">
+                            <a :href="element.url">{{ element.text }}</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h3>Sites</h3>
                     <ul>
-                        <li>
-                            <a href="/">DC</a>
-                        </li>
-                        <li>
-                            <a href="/">MAD Magazine</a>
-                        </li>
-                        <li>
-                            <a href="/">DC Kids</a>
-                        </li>
-                        <li>
-                            <a href="/">DC Universe</a>
-                        </li>
-                        <li>
-                            <a href="/">DC Power Visa</a>
+                        <li v-for="(element, index) in Sites" :key="`siteIndex-${index}`">
+                            <a :href="element.url">{{ element.text }}</a>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +43,119 @@
 
 <script>
 export default {
-
+    name:'FooterLinks',
+    data() {
+        return {
+            Comics: [
+                {
+                    text: 'Characters',
+                    url: '/'
+                },
+                {
+                    text: 'Comics',
+                    url: '/'
+                },
+                {
+                    text: 'Movies',
+                    url: '/'
+                },
+                {
+                    text: 'TV',
+                    url: '/'
+                },
+                {
+                    text: 'Games',
+                    url: '/'
+                },
+                {
+                    text: 'Videos',
+                    url: '/'
+                },
+                {
+                    text: 'News',
+                    url: '/'
+                },
+            ],
+            Shop: [
+                {
+                    text: 'Shop DC',
+                    url: '/',
+                },
+                {
+                    text: 'Shop DC Collectibles',
+                    url: '/',
+                },
+            ],
+            Dc: [
+                {
+                    text: 'Therms Of Use',
+                    url: '/',
+                },
+                {
+                    text: 'Privacy policy (New)',
+                    url: '/',
+                },
+                {
+                    text: 'Ad Choices',
+                    url: '/',
+                },
+                {
+                    text: 'Advertising',
+                    url: '/',
+                },
+                {
+                    text: 'Jobs',
+                    url: '/',
+                },
+                {
+                    text: 'Subscriptions',
+                    url: '/',
+                },
+                {
+                    text: 'Talent Workshops',
+                    url: '/',
+                },
+                {
+                    text: 'CPSC Certificates',
+                    url: '/',
+                },
+                {
+                    text: 'Rating',
+                    url: '/',
+                },
+                {
+                    text: 'Shop Help',
+                    url: '/',
+                },
+                {
+                    text: 'Contact Us',
+                    url: '/',
+                },
+            ],
+            Sites: [
+                {
+                    text: 'DC',
+                    url: '/',
+                },
+                {
+                    text: 'MAD Magazine',
+                    url: '/',
+                },
+                {
+                    text: 'DC Kids',
+                    url: '/',
+                },
+                {
+                    text: 'DC Universe',
+                    url: '/',
+                },
+                {
+                    text: 'DC Power Visa',
+                    url: '/',
+                },
+            ],
+        }
+    }
 }
 </script>
 
