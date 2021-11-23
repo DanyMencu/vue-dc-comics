@@ -4,7 +4,7 @@
             <a href="/">
                 <img  class="header-logo" src="@/assets/dc-logo.png" alt="DC logo">
             </a>
-            <ul class="d-flex">
+            <ul class="d-flex i-center">
                 <li>
                     <a href="/">Characters</a>
                 </li>
@@ -60,6 +60,11 @@ export default {
         .header-logo {
         height: 100%;
         padding: 0.25rem;
+        transition: filter 0.2s;
+
+        &:hover {
+            filter:grayscale(0.5);
+        }
     }
 
     ul {
@@ -88,7 +93,7 @@ export default {
             top: 28px;
             width: 100%;
             height: 0;
-            background: #000;
+            background: #0b5ba5;
             transition: height 0.15s;
         }
 
@@ -96,7 +101,9 @@ export default {
             height: 2px;
         }
 
-
+        li:hover a {
+            color: #0b5ba5;
+        }
     }
 
 </style>

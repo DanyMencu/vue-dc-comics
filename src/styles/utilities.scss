@@ -1,8 +1,22 @@
 .d-flex {
     display: flex;
-    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .s-between {
     justify-content: space-between;
+}
+
+.i-center {
+    align-items: center;
+}
+
+/* SPACING */
+
+.py-1_5 {
+    padding: 1.5rem 0;
 }
