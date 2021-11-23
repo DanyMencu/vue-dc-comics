@@ -1,7 +1,7 @@
 <template>
   <section>
       <div class="container">
-      <h1> Content goues here </h1>
+      <h2> Content goes here </h2>
       </div>
   </section>
 </template>
@@ -17,7 +17,7 @@ export default {
             padding: 3rem 0;
             background-color: #000;
 
-            h1 {
+            h2 {
                 color: #fff;
             }
 

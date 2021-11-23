@@ -5,35 +5,8 @@
                 <img  class="header-logo" src="@/assets/dc-logo.png" alt="DC logo">
             </a>
             <ul class="d-flex i-center">
-                <li>
-                    <a href="/">Characters</a>
-                </li>
-                <li>
-                    <a href="/">Comics</a>
-                </li>
-                <li>
-                    <a href="/">Movies</a>
-                </li>
-                <li>
-                    <a href="/">Tv</a>
-                </li>
-                <li>
-                    <a href="/">Games</a>
-                </li>
-                <li>
-                    <a href="/">Collectibles</a>
-                </li>
-                <li>
-                    <a href="/">Videos</a>
-                </li>
-                <li>
-                    <a href="/">Fans</a>
-                </li>
-                <li>
-                    <a href="/">News</a>
-                </li>
-                <li>
-                    <a href="/">Shop</a>
+                <li v-for="(element, index) in headerLink" :key="`link-${index}`">
+                    <a :class="{ active: element.current}" :href="element.url">{{ element.text }}</a>
                 </li>
             </ul>
       </div>
@@ -42,7 +15,63 @@
 
 <script>
 export default {
-
+    name: 'Header',
+    data() {
+        return {
+            headerLink: [
+                {
+                    text: 'Characters',
+                    url: '/',
+                    current: false,
+                },
+                {
+                    text: 'Comics',
+                    url: '/',
+                    current: true,
+                },
+                {
+                    text: 'Movies',
+                    url: '/',
+                    current: false,
+                },
+                {
+                    text: 'Tv',
+                    url: '/',
+                    current: false,
+                },
+                {
+                    text: 'Games',
+                    url: '/',
+                    current: false,
+                },
+                {
+                    text: 'Videos',
+                    url: '/',
+                    current: false,
+                },
+                {
+                    text: 'Fans',
+                    url: '/',
+                    current: false,
+                },
+                {
+                    text: 'News',
+                    url: '/',
+                    current: false,
+                },
+                {
+                    text: 'Characters',
+                    url: '/',
+                    current: false,
+                },
+                {
+                    text: 'Shop',
+                    url: '/',
+                    current: false,
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -98,9 +127,10 @@ export default {
         }
 
         li:hover::after {
-            height: 2px;
+            height: 3px;
         }
 
+        li a.active,
         li:hover a {
             color: #0b5ba5;
         }
