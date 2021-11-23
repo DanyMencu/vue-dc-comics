@@ -111,13 +111,13 @@ export default {
 
 <style scoped lang='scss'>
     section {
-        height: 50vh;
+        height: 45vh;
         background-image: url('../assets/footer-bg.jpg');
         color: #fff;
 
         img {
             object-fit: cover;
-            width: 430px;
+            width: 400px;
         }
 
             h3 {
