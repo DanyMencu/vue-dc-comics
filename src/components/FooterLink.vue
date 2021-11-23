@@ -163,11 +163,12 @@ export default {
     section {
         height: 45vh;
         background-image: url('../assets/footer-bg.jpg');
+        background-size: cover;
         color: #fff;
 
         img {
             object-fit: cover;
-            width: 400px;
+            width: 50%;
         }
 
             h3 {
@@ -188,12 +189,15 @@ export default {
                 margin-bottom: 20px;
             }
 
+            li:hover a {
+                text-decoration: underline;
+            }
+
              a {
                 text-decoration: none;
                 color: #fff;
                 font-size: 10px;
             }
-
         }
     }
 </style>

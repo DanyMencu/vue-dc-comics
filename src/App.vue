@@ -5,6 +5,8 @@
 
     <main>
       <MainContent />
+
+      <MainShopArea />
     </main>
 
     <footer>
@@ -20,6 +22,7 @@ import Header from '@/components/Header.vue'
 import MainContent from '@/components/MainContent.vue'
 import FooterLink from '@/components/FooterLink.vue'
 import FooterSocials from '@/components/FooterSocials.vue'
+import MainShopArea from '@/components/MainShopArea.vue'
 
 export default {
   name: 'App',
@@ -28,6 +31,7 @@ export default {
     MainContent,
     FooterLink,
     FooterSocials,
+    MainShopArea,
   }
 }
 </script>

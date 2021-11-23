@@ -60,6 +60,14 @@ export default {
         img {
             height: 85%;
             margin: 0 0.5rem;
+            border: 0 solid #797979;
+            border-radius: 50%;
+            transition: box-shadow 0.15s;
+
+            &:hover {
+                box-shadow: 0 0 10px 1px #797979;
+                transform: scale(1.05);
+            }
         }
 
     }

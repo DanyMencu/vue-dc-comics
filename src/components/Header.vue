@@ -27,7 +27,7 @@ export default {
                 {
                     text: 'Comics',
                     url: '/',
-                    current: true,
+                    current: false,
                 },
                 {
                     text: 'Movies',
@@ -89,10 +89,10 @@ export default {
         .header-logo {
         height: 100%;
         padding: 0.25rem;
-        transition: filter 0.2s;
+        transition: transform 1.75s;
 
         &:hover {
-            filter:grayscale(0.5);
+            transform: rotateY(360deg);
         }
     }
 
@@ -112,6 +112,8 @@ export default {
                 text-transform: uppercase;
                 font-size: 12px;
                 font-weight: 600;
+            transition: transform 0.2s;
+
             }
         }
 
@@ -133,6 +135,7 @@ export default {
         li a.active,
         li:hover a {
             color: #0b5ba5;
+            transform: scale(1.05);
         }
     }
 
