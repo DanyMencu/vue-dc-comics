@@ -115,26 +115,6 @@ export default {
             li {
                 width: calc(100% / 6);
                 padding: 0 15px;
-
-                .img-container {
-                    width: 100%;
-                    height: 60%;
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                a {
-                    text-decoration: none;
-
-                    h4 {
-                        color: #fff;
-                        padding: 1rem 0;
-                        text-transform: uppercase;
-                    }
-                }
             }
         }
 
