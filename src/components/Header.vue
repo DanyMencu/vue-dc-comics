@@ -109,10 +109,12 @@ export default {
             height: 100%;
             margin: 0 0.6rem;
             border-bottom: 3px solid #0b5ba500;
-            transition: border-bottom 0.15s;
+            transition: all 0.3s;
+
 
             &:hover {
                 border-bottom: 3px solid #0b5ba5;
+                background-color: #f5f5f5;
             }
 
             a {

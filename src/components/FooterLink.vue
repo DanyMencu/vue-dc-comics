@@ -173,7 +173,7 @@ export default {
 
             h3 {
                 margin: 5px 0 7px;
-                font-size: 14px;
+                font-size: 16px;
                 text-transform: uppercase;
             }
 
@@ -181,7 +181,7 @@ export default {
             list-style: none;
 
             li {
-                line-height: 13px;
+                line-height: 16px;
                 margin-right: 30px;
 
                 &:hover a {
@@ -198,7 +198,7 @@ export default {
              a {
                 text-decoration: none;
                 color: #737e7c;
-                font-size: 12px;
+                font-size: 14px;
             }
         }
     }
