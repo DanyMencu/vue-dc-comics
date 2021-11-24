@@ -4,12 +4,7 @@
             <!-- Comics list -->
             <ul class="d-flex">
                 <li v-for="(element, index) in Comics" :key="`comic-${index}`">
-                    <a href="/">
-                        <div class="img-container">
-                            <img :src="element.thumb" :alt="element.series">
-                        </div>
-                        <h4> {{ element.series }} </h4>
-                    </a>
+                    <ComicCard :thumb="element.thumb" :series="element.series" />
                 </li>
             </ul>
 
@@ -20,8 +15,13 @@
 </template>
 
 <script>
+import ComicCard from '@/components/ComicCard.vue'
+
 export default {
     name: 'MainContent',
+    components: {
+        ComicCard,
+    },
     data() {
         return {
             Comics: [
