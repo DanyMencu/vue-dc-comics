@@ -1,8 +1,8 @@
 <template>
   <section>
       <div class="container d-flex s-between">
-            <a href="/">
-                <img  class="header-logo" src="@/assets/dc-logo.png" alt="DC logo">
+            <a class="header-logo" href="/">
+                <img   src="@/assets/dc-logo.png" alt="DC logo">
             </a>
             <ul class="d-flex i-center">
                 <li class="d-flex i-center" v-for="(element, index) in headerLink" :key="`link-${index}`">
@@ -87,11 +87,16 @@ export default {
 
         .header-logo {
         height: 100%;
-        padding: 0.25rem;
+        padding: 0.7rem 0;
         transition: transform 1.75s;
 
         &:hover {
             transform: rotateY(360deg);
+            filter:contrast(120%);
+        }
+
+        img {
+            height: 100%;
         }
     }
 
@@ -121,21 +126,6 @@ export default {
 
             }
         }
-
-/*         li::after {
-            content: "";
-            display: inline-block;
-            position: relative;
-            top: 30px;
-            width: 100%;
-            height: 0;
-            background: #0b5ba5;
-            transition: height 0.15s;
-        } */
-
-/*         li:hover::after {
-            height: 3px;
-        } */
 
         li a.active,
         li:hover a {
