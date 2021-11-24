@@ -73,6 +73,7 @@ export default {
             text-transform: uppercase;
             margin-right: 0.5rem;
             align-self: center;
+            cursor: default;
         }
 
         img {

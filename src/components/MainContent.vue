@@ -1,6 +1,9 @@
 <template>
     <section>
         <div class="container">
+            <div class="series">
+                Current series
+            </div>
             <!-- Comics list -->
             <ul class="d-flex">
                 <li v-for="(element, index) in Comics" :key="`comic-${index}`">
@@ -105,8 +108,22 @@ export default {
 
 <style scoped lang='scss'>
     section {
-        padding: 3rem 0;
+        padding: 3.5rem 0 2rem;
         background-color: #1c1c1c;
+        position: relative;
+
+        .series {
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%);
+            background-color: #0282f9;
+            padding: 10px 60px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: default;
+        }
 
         ul {
             list-style: none;
@@ -114,11 +131,7 @@ export default {
 
             li {
                 width: calc(100% / 6);
-                padding: 0 15px;
-
-                &:hover img {
-                    filter: blur(1px);
-                }
+                padding: 5px 1rem;
             }
         }
 

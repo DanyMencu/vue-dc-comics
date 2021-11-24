@@ -175,6 +175,7 @@ export default {
                 margin: 5px 0 7px;
                 font-size: 16px;
                 text-transform: uppercase;
+                cursor: default;
             }
 
         ul {
