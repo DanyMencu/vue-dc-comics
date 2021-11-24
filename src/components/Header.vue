@@ -102,7 +102,6 @@ export default {
         list-style: none;
 
         li {
-            position: relative;
             margin: 0 0.6rem;
 
             a {
@@ -112,7 +111,7 @@ export default {
                 text-transform: uppercase;
                 font-size: 14px;
                 font-weight: 600;
-            transition: transform 0.2s;
+                transition: transform 0.2s;
 
             }
         }
