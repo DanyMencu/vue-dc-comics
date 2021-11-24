@@ -2,7 +2,7 @@
   <section>
         <div class="container d-flex s-between footer-links">
             <!-- Links -->
-            <div class=" d-flex py-1_5">
+            <div class=" d-flex py-1_5 self-center">
                 <div>
                     <h3>Dc Comics</h3>
                     <ul>
@@ -173,7 +173,7 @@ export default {
 
             h3 {
                 margin: 5px 0 7px;
-                font-size: 13px;
+                font-size: 14px;
                 text-transform: uppercase;
             }
 
@@ -183,20 +183,22 @@ export default {
             li {
                 line-height: 13px;
                 margin-right: 30px;
+
+                &:hover a {
+                    text-decoration: underline;
+                    color: #fff;
+                }
             }
 
             li:last-child {
                 margin-bottom: 20px;
             }
 
-            li:hover a {
-                text-decoration: underline;
-            }
 
              a {
                 text-decoration: none;
-                color: #fff;
-                font-size: 10px;
+                color: #737e7c;
+                font-size: 12px;
             }
         }
     }

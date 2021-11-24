@@ -40,7 +40,7 @@ export default {
                   text-decoration:  none;
                   color: #fff;
                   font-weight: 600;
-                  font-size: 14px;
+                  font-size: 16px;
                   cursor: default;
                   transition: background-color 0.4s;
 
@@ -62,7 +62,7 @@ export default {
                   }
 
                   &:hover {
-                        background-color: #198ffd;
+                        background-color: #185894;
                   }
 
 

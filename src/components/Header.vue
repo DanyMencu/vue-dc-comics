@@ -110,7 +110,7 @@ export default {
                 text-decoration: none;
                 color: #000;
                 text-transform: uppercase;
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 600;
             transition: transform 0.2s;
 
@@ -121,7 +121,7 @@ export default {
             content: "";
             display: inline-block;
             position: relative;
-            top: 28px;
+            top: 30px;
             width: 100%;
             height: 0;
             background: #0b5ba5;

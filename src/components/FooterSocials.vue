@@ -4,21 +4,8 @@
           <button>Sing-up now!</button>
           <div class="socials d-flex">
               <h3>Follow us</h3>
-              <a href="/">
-                <img src="@/assets/footer-facebook.png" alt="Facebook logo">
-              </a>
-              <a href="/">
-                <img src="@/assets/footer-twitter.png" alt="Twitter logo">
-              </a>
-              <a href="/">
-                <img src="@/assets/footer-youtube.png" alt="Youtube logo">
-              </a>
-              <a href="/">
-              
-              <img src="@/assets/footer-pinterest.png" alt="Pinterest logo">
-              </a>
-              <a href="/">
-                <img src="@/assets/footer-periscope.png" alt="Periscope logo">
+              <a v-for="(element, index) in Socials" :key="`socialsIndex-${index}`" :href="element.url">
+                <img :src="element.img" :alt="`${element.text} logo`" >
               </a>
           </div>
       </div>
@@ -28,6 +15,37 @@
 <script>
 export default {
     name:'FooterSocials',
+    data(){
+        return {
+            Socials: [
+                {
+                    text: 'Facebook',
+                    img: require('@/assets/footer-facebook.png'),
+                    url: '/'
+                },
+                {
+                    text: 'Twitter',
+                    img: require('@/assets/footer-twitter.png'),
+                    url: '/'
+                },
+                {
+                    text: 'Youtube',
+                    img: require('@/assets/footer-youtube.png'),
+                    url: '/'
+                },
+                {
+                    text: 'Pinterest',
+                    img: require('@/assets/footer-pinterest.png'),
+                    url: '/'
+                },
+                {
+                    text: 'Periscope',
+                    img: require('@/assets/footer-periscope.png'),
+                    url: '/'
+                },
+            ],
+        }
+    }
 }
 </script>
 
