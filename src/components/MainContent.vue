@@ -115,6 +115,10 @@ export default {
             li {
                 width: calc(100% / 6);
                 padding: 0 15px;
+
+                &:hover img {
+                    filter: blur(1px);
+                }
             }
         }
 
@@ -130,7 +134,7 @@ export default {
             transition: all 0.15s;
 
             &:hover {
-                background-color: #185894;
+                background-color: #198ffd;
                 transform: scale(1.05);
             }
         }

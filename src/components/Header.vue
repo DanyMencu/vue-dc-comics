@@ -5,7 +5,7 @@
                 <img  class="header-logo" src="@/assets/dc-logo.png" alt="DC logo">
             </a>
             <ul class="d-flex i-center">
-                <li v-for="(element, index) in headerLink" :key="`link-${index}`">
+                <li class="d-flex i-center" v-for="(element, index) in headerLink" :key="`link-${index}`">
                     <a :class="{ active: element.current}" :href="element.url">{{ element.text }}</a>
                 </li>
             </ul>
@@ -79,7 +79,6 @@ export default {
     
     section {
         height: 10vh;
-        margin: 15px 0;
     }
 
     .container > a {
@@ -102,7 +101,14 @@ export default {
         list-style: none;
 
         li {
+            height: 100%;
             margin: 0 0.6rem;
+            border-bottom: 3px solid #0b5ba500;
+            transition: border-bottom 0.15s;
+
+            &:hover {
+                border-bottom: 3px solid #0b5ba5;
+            }
 
             a {
                 display: inline-block;
@@ -116,7 +122,7 @@ export default {
             }
         }
 
-        li::after {
+/*         li::after {
             content: "";
             display: inline-block;
             position: relative;
@@ -125,11 +131,11 @@ export default {
             height: 0;
             background: #0b5ba5;
             transition: height 0.15s;
-        }
+        } */
 
-        li:hover::after {
+/*         li:hover::after {
             height: 3px;
-        }
+        } */
 
         li a.active,
         li:hover a {

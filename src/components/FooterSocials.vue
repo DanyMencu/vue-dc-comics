@@ -80,10 +80,11 @@ export default {
             margin: 0 0.5rem;
             border: 0 solid #797979;
             border-radius: 50%;
-            transition: box-shadow 0.15s;
+            transition: all 0.25s;
 
             &:hover {
-                box-shadow: 0 0 10px 1px #797979;
+                filter:brightness(170%);
+                box-shadow: 0 0 10px 1px #868686;
                 transform: scale(1.05);
             }
         }

@@ -33,6 +33,15 @@ export default {
     a {
         text-decoration: none;
 
+        &:hover img {
+            filter:contrast(120%);
+        }
+
+         &:hover h4 {
+            color: #198ffd;
+            text-decoration: underline;
+        }
+
         h4 {
             color: #fff;
             padding: 1rem 0;
